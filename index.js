@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 
 // Import Routes
 const authRoute = require('./routes/auth');
-
+const crudRoute = require('./routes/jsoncrud');
 dotenv.config()
 
 // connect to db
@@ -18,6 +18,6 @@ app.use(express.json())
 
 // Route Middleware
 app.use('/api/user', authRoute);
-
+app.use('/api/posts', crudRoute);
 
 app.listen(4000, ()=>console.log("Local Server started successfully"));
