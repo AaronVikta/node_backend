@@ -1,7 +1,7 @@
 ## Description
 #This is a node based authentication app built using jwt and express
 
-#
+#Usage
 To use, clone and run npm install
 
 ### Test commands
